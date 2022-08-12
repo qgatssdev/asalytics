@@ -5,11 +5,11 @@ import { useAsa } from '../hooks/useAsa';
 import { useEffect } from 'react';
 
 export default function Home() {
-  const { data, error } = useAsa();
+  const { data, isLoading, error } = useAsa();
 
   useEffect(() => {
     console.log(data);
-  });
+  }, [data]);
   return (
     <div className={styles.container}>
       <Head>
@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <header>
         <Image
-          src={require('../assets/Header Logo.svg').default}
+          src={require('../assets/Header Logo.svg')}
           alt="logo"
           width={150}
           height={62.94}
