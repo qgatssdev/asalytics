@@ -17,6 +17,10 @@
     border: none;
     font-size: 16px;
     font-weight: 400;
+    cursor: pointer;
+    &:hover {
+      background-color: #000000d0;
+    }
   }
 
   main {
