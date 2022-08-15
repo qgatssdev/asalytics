@@ -47,7 +47,7 @@ const Asalytics = () => {
                 <div>
                   {data.logo === null ? (
                     <Image
-                      src={require('../assets/bitcoin-ic 1.svg')}
+                      src="/bitcoin-1.svg"
                       alt={data?.name}
                       width={30}
                       height={57.39}
@@ -58,6 +58,8 @@ const Asalytics = () => {
                       width={30}
                       height={57.39}
                       alt={data?.name}
+                      placeholder="blur"
+                      blurDataURL="/bitcoin12.png"
                     />
                   )}
                 </div>
