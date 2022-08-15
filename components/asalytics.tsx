@@ -14,13 +14,16 @@ const Asalytics = () => {
 
   useEffect(() => {
     if (!isLoading) {
-      setInitalData(data?.results);
-      setList(data?.results.slice(0, LIMIT));
+      setInitalData(data?.result);
+      setList(data?.result.slice(0, LIMIT));
     }
   }, [data, isLoading]);
 
   const LENGTH = initalData.length;
 
+  useEffect(() => {
+    console.log(data);
+  });
   const loadMore = () => {
     const newIndex = index + LIMIT;
     const newShowMore = newIndex < LENGTH - 1;
