@@ -21,9 +21,6 @@ const Asalytics = () => {
 
   const LENGTH = initalData.length;
 
-  useEffect(() => {
-    console.log(data);
-  });
   const loadMore = () => {
     const newIndex = index + LIMIT;
     const newShowMore = newIndex < LENGTH - 1;
