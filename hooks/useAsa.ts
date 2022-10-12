@@ -7,7 +7,7 @@ const endpoint = 'https://analytics-api.herokuapp.com/analytics';
 
 export function useAsa() {
   const client = new GraphQLClient(endpoint);
-
+//
   return useQuery(['Asas'], async () => {
     const { asalist } = await client.request(GET_ALL_USERS);
     return asalist;
