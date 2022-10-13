@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Asalytics from '../components/asalytics';
 
 export default function Home() {
+  //
   return (
     <div className={styles.container}>
       <Head>
