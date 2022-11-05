@@ -4,7 +4,7 @@ import { GraphQLClient } from 'graphql-request';
 import { GET_ALL_USERS } from '../queries/get-all';
 
 const endpoint = 'https://analytics-api.herokuapp.com/analytics';
-
+//
 export function useAsa() {
   const client = new GraphQLClient(endpoint);
 
